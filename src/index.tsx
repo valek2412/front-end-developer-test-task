@@ -1,7 +1,11 @@
 import * as React from 'react'
+import ProductEquipmentCard from "./components/ProductEquipmentCard";
+import data from "./data/data";
 
 const TestApp = () => (
-  <h1>Change me</h1>
-)
+  <>
+    <ProductEquipmentCard prices = {data} onSubmit={selectedPriceOption => console.dir(selectedPriceOption)}  />
+  </>
+);
 
-export default TestApp
+export default TestApp;

@@ -1,9 +1,12 @@
 import * as React from 'react'
-import TestApp from './'
+import ProductEquipmentCard from "./components/ProductEquipmentCard";
+import data from "./data/data";
 
 const Regular: React.FC = () => (
-  <TestApp />
-)
+  <>
+    <ProductEquipmentCard prices = {data} onSubmit={selectedPriceOption => console.dir(selectedPriceOption)}  />
+  </>
+);
 
 export { Regular }
 
